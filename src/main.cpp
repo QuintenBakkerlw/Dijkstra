@@ -93,24 +93,24 @@ void DijkstraAlgo(int graph[4][4],int src, int end) // adjacency matrix
 
 int main()
 {
-    int graphCar[4][4]={
+    int autorit[4][4]={
         {0, 1, 7, 1},
         {1, 0, 0, 2},
         {7, 0, 0, 3},
         {1, 2, 3, 0}};
     
-    int graphPlane[4][4]={
+    int vlucht[4][4]={
         {0, 1, 7, 1},
         {1, 0, 0, 2},
         {7, 0, 0, 3},
         {1, 2, 3, 0}};
 
-     int graphTrain[4][4]={
+     int treinrit[4][4]={
         {0, 1, 7, 1},
         {1, 0, 0, 2},
         {7, 0, 0, 3},
         {1, 2, 3, 0}};
-    DijkstraAlgo(graphCar,0,2); 
+    DijkstraAlgo(autorit,0,2); 
     
     return 0;           
 }
