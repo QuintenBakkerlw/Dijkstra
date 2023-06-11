@@ -60,10 +60,7 @@ void DijkstraAlgo::Dijkstra(int graph[4][4], int src, int end, int size)
                 };
             
         };
-      
-        // convert numbers to letters
-        routestring[k] = alphabet[route[k]];
-        cout << routestring[k];
+        
     };
 
 };
