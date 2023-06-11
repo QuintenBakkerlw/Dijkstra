@@ -1,26 +1,30 @@
 #include <iostream>
-#include "shortestPath.hpp"
+#include <string>
+using namespace std;
 
 
 class DijkstraAlgo
 {
 private:
-    int graph[4][4], src, end;
+    int graph[4][4], src, end, size;
 public:
-    DijkstraAlgo(int graph[4][4],int src, int end);
 
-    int shortestPath(int distance[4], bool visited[4]) // finding minimum distance
-{
-    int min=INT_MAX,ind;
-              
-    for(int k=0;k<4;k++) 
+    DijkstraAlgo();
+    void Dijkstra(int graph[4][4], int src, int end, int size);
+
+    int shortestPath(int distance[4], bool visited[4], int size) // finding minimum distance
     {
-        if(visited[k]==false && distance[k]<=min)      
+        int min=INT_MAX,mindistance;
+        
+        for(int k=0;k<size;k++) // loop through distance to find the shortest of a no visited node
         {
-            min=distance[k];
-            ind=k;
+            if(visited[k]==false && distance[k]<=min)      
+            {
+                min=distance[k];
+                mindistance=k;
+            }
         }
+        return mindistance;
     }
-    return ind;
-}
+
 };

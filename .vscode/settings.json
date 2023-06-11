@@ -5,6 +5,16 @@
             "cwd": "c:\\Users\\quint\\Dijkstra",
             "binaryPath": "c:\\Users\\quint\\Dijkstra\\main",
             "binaryArgs": []
+        },
+        {
+            "cwd": "c:\\Users\\quint\\Dijkstra-1",
+            "binaryPath": "c:\\Users\\quint\\Dijkstra-1\\main",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "c:\\Users\\quint\\Dijkstra-1",
+            "binaryPath": "c:\\Users\\quint\\Dijkstra-1\\test",
+            "binaryArgs": []
         }
     ],
     "files.associations": {
